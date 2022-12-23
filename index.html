@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <h2>Promises Async Await</h2>
+    <hr>
+    <p><b>1-Write one example explaining how you can write a callback function ?</b></p>
+    <pre>function sum(a,b,callback){  
+        console.log(a+b);
+        callback()
+   }
+   function name(name){
+       console.log("name");
+   }
+   
+   sum(2,3,name)
+   </pre>
+    <hr>
+    <p><b>2-"Write callback function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
+
+        Explain callback hell.
+        Numbers
+        1
+        2
+        3
+        4
+        5
+        6
+        7"</b></p>
+        <pre></pre>
+        <hr>
+    <p><b>3-"Write promise function to print numbers from 1 to 7, in which 1 should be printed after 1 sec , 2 should be printed after 2 sec, 3 should be printed after 3 sec and so on. 
+
+        Numbers
+        1
+        2
+        3
+        4
+        5
+        6
+        7"</b></p>    
+        <pre></pre>
+        <hr>
+    <p><b>4-Create a promise function accepting a argument, if yes is passed to the function then it should go to resolved state and print Promise Resolved, and if nothing is passed then it should go to reject state and catch the error and print Promise Rejected </b></p> 
+    <pre></pre>   
+    <hr>
+    <p><b>5-Create examples to explain callback function</b></p>
+ 
+    <pre> function hello(){
+        console.log("heloo...");
+     }
+     function sum(num1,num2,callback){
+     console.log(num1+num2);
+     hello()
+     }
+    
+    sum(3,4,hello)</pre>
+    <hr>
+    <p><b>6-Create examples to explain callback hell function</b></p>
+    <pre></pre>
+    <hr>
+    <p><b>7-Create examples to explain promises function</b></p>
+    <pre>let complete=false
+
+        let prom=new Promise(function(resolve,reject){
+        if(complete){
+           resolve();
+        }else {
+        reject()
+        }
+        
+        })
+        prom.then(function(){
+            console.log("yes");
+        }).catch(function(error){
+            console.log("error");
+        })
+        </pre>
+    <hr>
+    <p><b>8-Create examples to explain async await function</b></p>
+    <pre>async function name(){
+        console.log("rishabh");
+       await console.log("mishra");
+        console.log("aryan");
+    }
+    name()
+        console.log("hello");</pre>
+    <hr>
+    <p><b>9-Create examples to explain promise.all function</b></p>
+    <pre></pre>
+    <hr>
+    <script src="./index.js"></script>
+
+</body>
+</html>
